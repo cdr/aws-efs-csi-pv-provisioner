@@ -37,7 +37,7 @@ func (p *efsProvisioner) Provision(options controller.ProvisionOptions) (*v1.Per
 		return nil, fmt.Errorf("claim.Spec.Selector is not supported")
 	}
 
-	gidAllocate := true
+	gidAllocate := false
 	for k, v := range options.StorageClass.Parameters {
 		switch strings.ToLower(k) {
 		case "gidmin":
