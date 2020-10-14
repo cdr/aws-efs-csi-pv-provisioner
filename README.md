@@ -55,7 +55,7 @@ spec:
     volumeHandle: fs-12345678:/persistentvolumes/default-my-efs-pvc-pvc-cdd36709-bd3b-11ea-9990-12db9e7ffa3d
   mountOptions:
   - tls
-  - iam
+  #- iam
   persistentVolumeReclaimPolicy: Delete
   storageClassName: efs
   volumeMode: Filesystem

@@ -10,7 +10,7 @@ spec:
   - ReadWriteMany
   mountOptions:
   - tls
-  - iam
+  #- iam
   persistentVolumeReclaimPolicy: Retain
   storageClassName: efs-sc
   csi:
